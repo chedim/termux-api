@@ -1,7 +1,12 @@
-# Termux API
+# Termux Launcher API
 
 [![Build status](https://github.com/termux/termux-api/workflows/Build/badge.svg)](https://github.com/termux/termux-api/actions)
 [![Join the chat at https://gitter.im/termux/termux](https://badges.gitter.im/termux/termux.svg)](https://gitter.im/termux/termux)
+
+This fork is being regularly updated and developed by chedim as keyboard-driven launcher with android application autocompletion.
+Android application names can be entered directly as bash commands or as arguments to `termux-launch`
+Please note that you need to also install customized (termux-app)[https://github.com/chedim/termux-app] for termux-launch to work.
+Inspired by Thewisenerd's [termux-setup-apps patch](https://github.com/thewisenerd/termux-app/commit/b877a81b999179af2d702b8929b6d20e29dde054)
 
 This is an app exposing Android API to command line usage and scripts or programs.
 
