@@ -5,7 +5,6 @@ import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
-import android.nfc.NfcAdapter;
 import android.os.Build;
 import android.provider.Settings;
 import android.widget.Toast;
@@ -34,6 +33,9 @@ public class TermuxApiReceiver extends BroadcastReceiver {
         }
 
         switch (apiMethod) {
+            case "PackageInfo":
+                PackageManagerApi.onReceive(this, context, intent);
+                break;
             case "AudioInfo":
                 AudioAPI.onReceive(this, context, intent);
                 break;
